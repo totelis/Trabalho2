@@ -1,0 +1,18 @@
+/* styles.css - tema escuro simples */
+:root{--bg:#071018;--card:#0f1720;--accent:#e50914;--muted:#bfc7cd}
+*{box-sizing:border-box}body{margin:0;font-family:Inter,Arial,Helvetica,sans-serif;background:var(--bg);color:#fff}
+.header{display:flex;justify-content:space-between;align-items:center;padding:12px 28px;background:linear-gradient(0deg,rgba(0,0,0,0.4),transparent)}.logo{height:42px}
+.header nav a{color:#fff;margin-left:12px;text-decoration:none}
+.btn{padding:8px 12px;border-radius:6px;border:1px solid rgba(255,255,255,0.06);background:transparent;color:#fff;cursor:pointer}
+.btn.primary{background:var(--accent);border:none}
+.welcome{display:flex;gap:20px;padding:40px 6%}.intro{flex:1}.banner img{width:380px;border-radius:8px}
+.cta{margin-top:16px}.cta input{padding:12px;border-radius:6px;border:none;width:320px;margin-right:8px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:14px;padding:20px}
+.grid .card{background:var(--card);border-radius:8px;overflow:hidden}.card img{width:100%;display:block}.muted{color:var(--muted)}.footer{padding:24px;text-align:center;color:var(--muted)}
+.modal{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,0.6)}.modal.hidden{display:none}.modal-panel{background:#0b1116;padding:20px;border-radius:8px;width:360px}
+.close{position:absolute;right:20px;top:18px;background:transparent;border:none;color:#fff;font-size:22px}
+.auth, .plans, .account{padding:40px 6%}
+.banner-large img{width:100%;height:360px;object-fit:cover;border-radius:8px}
+.film-page{display:flex;gap:20px;padding:30px 6%}.film-page .left img{width:300px;border-radius:8px}
+.plan-grid{display:flex;gap:18px}.plan{background:var(--card);padding:18px;border-radius:8px}.primary{background:var(--accent)}
+@media(max-width:800px){.welcome{flex-direction:column}.banner img{width:100%} .film-page{flex-direction:column}.film-page .left img{width:100%}}

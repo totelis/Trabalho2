@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>CineFlix — Bem-vindo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <img src="assets/logo.png" alt="CineFlix" class="logo">
+    <nav>
+      <a href="login.html">Entrar</a>
+      <a href="plans.html" class="btn">Assine</a>
+    </nav>
+  </header>
+  <main class="welcome">
+    <div class="intro">
+      <h1>Assista filmes e séries a qualquer hora</h1>
+      <p>Catálogo fictício com demonstração de cadastro, verificação de e-mail real via SendGrid e backend pronto.</p>
+      <div class="cta">
+        <input id="email-main" type="email" placeholder="Seu melhor e-mail">
+        <button id="start" class="btn primary">Comece grátis</button>
+      </div>
+      <p class="muted">Sem cobrança — protótipo.</p>
+    </div>
+    <div class="banner"><img src="assets/filmes/amanhecer_sangrento.jpg" alt=""></div>
+  </main>
+  <section class="highlights">
+    <h2>Em destaque</h2>
+    <div class="grid" id="grid-highlights"></div>
+  </section>
+
+  <footer class="footer">© 2025 CineFlix — Protótipo</footer>
+
+  <div id="modal" class="modal hidden">
+    <div class="modal-panel">
+      <button id="close-modal" class="close">&times;</button>
+      <h3>Criar conta</h3>
+      <form id="signup-form">
+        <label>E-mail</label>
+        <input id="signup-email" type="email" required>
+        <label>Senha</label>
+        <input id="signup-password" type="password" minlength="6" required>
+        <div id="signup-msg" class="muted"></div>
+        <button class="btn primary" type="submit">Cadastrar</button>
+      </form>
+      <div id="confirm-area" class="hidden">
+        <p>Digite o código que você recebeu por e-mail:</p>
+        <input id="confirm-code" type="text" maxlength="6">
+        <button id="confirm-btn" class="btn">Confirmar</button>
+        <div id="confirm-msg" class="muted"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="verify.js"></script>
+</body>
+</html>
